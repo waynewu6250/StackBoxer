@@ -5,7 +5,7 @@ This work basically combines three separate work with full credits given to: <br
 [Ting-Wei Ke](https://github.com/TIngWeiKe) and [Wayne Wu](https://github.com/waynewu6250): <br>
 
 * [StackBot](https://github.com/waynewu6250/ML_DL_Projects/tree/master/1.StackBot-on-telegram): A coding assistant to help you search answers on stackoverflow with a given code query. Designed and created by [Wayne Wu](https://github.com/waynewu6250).
-* [MovieBot](https://github.com/waynewu6250/ML_DL_Projects/tree/master/5.Movie-bot-pytorch): A common chatting robot trained by movie dialogues. Designed and created by [Wayne Wu](https://github.com/waynewu6250).
+* [MovieBot](https://github.com/waynewu6250/ML_DL_Projects/tree/master/2.Movie-bot-pytorch): A common chatting robot trained by movie dialogues. Designed and created by [Wayne Wu](https://github.com/waynewu6250).
 * [ChatBox](https://github.com/TIngWeiKe/ChatBox): A web full-stack application of fancy chatroom designed and created by [Ting-Wei Ke](https://github.com/TIngWeiKe).
 
 ## Installation
