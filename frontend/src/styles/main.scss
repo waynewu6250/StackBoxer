@@ -4,10 +4,10 @@ html{
 
 body {
 	width: 100%;
-	height: 100%;
-	background-image: linear-gradient(to right, #86ede7, #989af5, #c490f3) !important;
+	height: 100vh;
+	background-image: linear-gradient(to right, #97eacf, #989af5, #e890f3) !important;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
-	padding: 1.5% 1.5% !important;
+	padding: 3% 5% !important;
 }
 
 @media all and (max-width: 1199px) {
@@ -19,6 +19,10 @@ body {
 	}
 	.info_box {
 		height: 100% !important;
+		float: left;
+	}
+	#info_msg{
+		float: left;
 	}
 }
 
@@ -31,6 +35,9 @@ body {
 	}
 	.info_box {
 		height: 100% !important;
+	}
+	#info_msg{
+		float: left;
 	}
 }
 
@@ -47,6 +54,9 @@ body {
 	}
 	.message-container {
 		height: 96vh !important;
+	}
+	.git{
+		position: unset !important; 
 	}
 }
 
@@ -67,11 +77,14 @@ body {
 		font-size: 7.5vw !important;
 		padding: 15px 30px !important;
 	}
+	.git{
+		position: unset !important; 
+	}
 }
 
 .message-container {
 	position: relative;
-	height: 94vh;
+	height: 90vh;
 	background-color: rgba(0, 0, 0, 0.4) !important;
 	border-radius: 15px !important;
 	overflow: hidden;
@@ -81,6 +94,7 @@ body {
 #message-list {
 	height: calc(100% - 140px);
 	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 	padding: 0.8em 1.5em;
 }
 
@@ -91,8 +105,7 @@ body {
 	height: 90vh;
 	background-color: rgba(0, 0, 0, 0.4) !important;
 	border-radius: 15px !important;
-	overflow-y: scroll;
-
+	-webkit-overflow-scrolling: touch;
 	.side_header {
 		color: white;
 		text-align: center;
@@ -239,7 +252,7 @@ body {
 	}
 	> .msg_time {
 		max-width: 150px;
-		left: 40px;
+		left: 48px;
 		position: relative;
 		color: rgba(255, 255, 255, 0.5);
 		font-size: 10px;
@@ -270,7 +283,7 @@ body {
 		clear: both;
 		float: right;
 		max-width: 150px;
-		right: 45px;
+		right: 52px;
 		position: relative;
 		color: rgba(255, 255, 255, 0.5);
 		font-size: 10px;
@@ -283,6 +296,7 @@ body {
 	height: 80px;
 	margin-bottom: 0;
 	background-color: rgba(0, 0, 0, .1);
+	
 	> .robot_info {
 		position: relative;
 	}
@@ -365,14 +379,39 @@ body {
 }
 
 .info_box {
-	flex: 1 1 auto;
-	height: 94vh;
+	position: relative;
+	overflow: scroll ;
+	-webkit-overflow-scrolling: touch;
+	height: 90vh;
 	background-color: rgba(0, 0, 0, 0.4) !important;
 	border-radius: 15px !important;
 	font-size: 16px;
 	padding: 16px;
 	color: white;
 	line-height: 1.4285em;
+	
+	#info_msg{
+		width:100px;
+		position: relative;
+		display: inline;
+	}
+	
+	h1{
+		display: inline;
+		position: relative;
+		top:20px;
+		left: 10px;
+		margin: 0;
+		font-size: 38px;
+		color: white;
+		font-weight: bold;
+		line-height: 70px;
+		text-shadow: 3px 2px black;
+	}
+}
+
+.info_box::-webkit-scrollbar {
+	display: none;
 }
 
 div#wave {
@@ -401,6 +440,12 @@ div#wave {
 	40% {
 		transform: translateY(-4px);
 		background-color: rgb(141, 137, 145);
+	}
+}
+
+@keyframes wave2 {
+	40% {
+		transform: translateY(-6px);
 	}
 }
 
@@ -483,6 +528,32 @@ div#wave {
 		&:active{
 			transform: translate(0px, 2px);
 		}
+		
 	}
 }
 
+.btn_animation{
+	animation: wave2 0.5s linear infinite;
+}
+
+.github_box{
+	margin: 10px 0;
+	.content{
+		color: white;
+	}
+	.sub{
+		color: rgba(255, 255, 255, 0.5) !important;
+	}
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 15px !important;
+	}
+}
+
+.git{
+	position: absolute;
+	width: 92%;
+	padding: 5px;
+	float: left;
+	bottom: 0px;
+}
