@@ -18,7 +18,7 @@ export default function messageReducer(state, action){
 		case 'stof':
 			state = { ...state }
 			state.stofMessage.push(action.message)
-			
+			localStorage.setItem('message', JSON.stringify({ ...state }))
 			return state
 		case 'INIT':
 			return (state = { mixMessage: [], enMessage: [], cnMessage: [], stofMessage: [] })

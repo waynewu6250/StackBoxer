@@ -13,7 +13,7 @@ export default function InfoBox(){
 				</div>
 				<Divider />
 				<div>
-				Chatting with a Deep learning brains.<br/>
+				Chatting with different Deep learning brains.<br/>
 				A fancy chatroom for you to chat with a functional DL robot.
 				</div>
 
