@@ -24,7 +24,7 @@ class Config:
     # for dataset
     data_path = "dialogue/moviebot_data/movie_lines.tsv"
     conversation_path = "dialogue/moviebot_data/movie_conversations.txt"
-    results_path = "dialogue/moviebot_data/data.bin"
+    results_path = "dialogue/moviebot_data/data_new.bin"
     prev_sent = 2
 
     # for chinese dataset
@@ -41,7 +41,7 @@ class Config:
     latent_dim = 500
     mxlen= 20
     teacher_forcing_ratio = .5
-    model_path = "dialogue/moviebot_data/memory.pth"
+    model_path = "dialogue/moviebot_data/memory_rl.pth"
     chinese_model_path = "dialogue/moviebot_data/memory_chinese.pth"
 
 opt = Config()

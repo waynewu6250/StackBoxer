@@ -11,13 +11,17 @@ export default function InfoBox(){
 					<Image id='info_msg' src={chickBot} />
 					<h1>ChatBox</h1>
 				</div>
+				<div align='center'>
+					A fancy chatroom for you to chat with different DL brains.<br/>
+				</div>
 				<Divider />
-				<div>
-				Chatting with different Deep learning brains.<br/>
-				A fancy chatroom for you to chat with a functional DL robot.
+				<div align='center'>
+				<div className="bigger">
+					<b>MixRobot</b><br/> 
+				</div>
+					Mix modes with three robots fused. <br/>
 				</div>
 
-			
 				<div>
 					<div className='git'>
 						<Divider />
@@ -26,7 +30,7 @@ export default function InfoBox(){
 								<Header as='h3'>
 									<Image src={gitIcon} />
 									<Header.Content>
-										FullStack
+										Full Stack Application
 										<Header.Subheader>See Github</Header.Subheader>
 									</Header.Content>
 								</Header>
@@ -37,7 +41,7 @@ export default function InfoBox(){
 								<Header as='h3'>
 									<Image src={gitIcon} />
 									<Header.Content>
-										DL Models
+										DL Seq2Seq Model
 										<Header.Subheader>See Github</Header.Subheader>
 									</Header.Content>
 								</Header>
